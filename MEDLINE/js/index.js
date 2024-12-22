@@ -1,6 +1,7 @@
 // For nav bar
 function show_nav(){
-    document.getElementById("hidden_nav").classList.toggle("show")
+    document.getElementById("hidden_nav").classList.toggle("show");
+    document.querySelector(".bars1").classList.toggle("navturn") //Turns the bars
 }
 
 
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     darkModeButton.style.position = 'fixed';
     darkModeButton.style.bottom = '20px';
     darkModeButton.style.right = '-100px'; // Initially hidden
-    darkModeButton.style.transition = 'transform 0.8s ease, right 0.8s ease';
+    darkModeButton.style.transition = 'transform 1s ease, right 1s ease';
 
     darkModeButton.addEventListener('click', toggleDarkMode);
 
@@ -39,13 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('scroll', () => {
-        const scrollThreshold = 300; // Adjust as needed
+        const scrollThreshold = 300;
         if (window.scrollY > scrollThreshold) {
             darkModeButton.style.right = '20px'; // Move in
-            darkModeButton.style.transform = 'rotate(0deg)'; // Stop rotation
-        } else {
-            darkModeButton.style.right = '-100px'; // Move out
             darkModeButton.style.transform = 'rotate(-360deg)'; // Rotate while moving out
+        } else {
+            darkModeButton.style.right = '-50px'; // Move out
+            darkModeButton.style.transform = 'rotate(0deg)'; // Stop rotation
         }
     });
 
