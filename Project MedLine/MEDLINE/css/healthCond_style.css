@@ -1,0 +1,261 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url('../DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+:root {
+	--_darkblue: rgba(19, 79, 119, 0.7);
+	--_lightblue: rgb(59, 157, 222);
+	--_textcolor: rgb(240, 248, 255);
+	--_textcolordark: rgb(82, 81, 81);
+	--_bodybc: rgb(240, 248, 255);
+	--_boldtext: rgb(22, 87, 131);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DMSans";
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.health_challng h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10vh 0px 8px 0px;
+    color: var(--_boldtext);
+}
+
+.health_p {
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    padding: 0px 0px 50px 0px;
+    color: #525151;
+}
+
+.search_div{
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    /* width: fit-content; */
+}
+
+#search_bar {
+    border-radius: 20px;
+    /* background-color: #3b9dde80; */
+    background-color: #d1d1d1;
+    border: none;
+    outline-color: #165783;
+    padding: .7rem 2.8rem .7rem .9rem;
+}
+
+#search_bar::placeholder {
+    color: #165783;
+}
+
+#search_icon {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 15px;
+
+    color: #134f77;
+}
+
+.search_illness {
+    padding: 4rem 7vw;
+}
+
+.ill, .ill1, .ill2, .ill3,.ill4,.ill5,.ill6,.ill7,.ill8,.ill9{
+    /* border: 2px solid orange; */
+    margin-bottom: 20px;
+    /* box-shadow: 0.5px 0.5px 5px #165783; */
+    border: 1px solid #165783;
+    border-radius: .3rem;
+    
+    padding: 17px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.ill:hover, .ill1:hover, .ill2:hover, .ill3:hover, .ill4:hover, .ill5:hover, .ill6:hover, .ill7:hover,
+.ill8:hover, .ill9:hover{
+    background-color: rgba(19, 79, 119, 0.7);
+    color: aliceblue;
+}
+
+.ill_dropdown, .ill_dropdown1, .ill_dropdown2, .ill_dropdown3,.ill_dropdown4,.ill_dropdown5,.ill_dropdown6,.ill_dropdown7,.ill_dropdown7, .ill_dropdown8,.ill_dropdown9{
+    display: none;
+    width: 100%;
+    /* position: absolute; */
+    z-index: 1;
+}
+
+.show {display: block;}
+
+
+.symptoms{
+    padding: 10px 0px;
+}
+.faq h1{
+    text-align: center;
+    font-size: 30px;
+    color: #165783;
+}
+
+.faq_boxes{
+    padding: 50px 17px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid salmon; */
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.main_faq_boxes{
+    border: 2px solid gold;
+    /* margin: auto; */
+}
+
+.faq_boxes div{
+    border: 1px solid #525151;
+    margin-bottom: 30px;
+    padding: 15px;
+    
+}
+
+.q{
+    border-radius: 10px 0px 10px 0px;
+}
+
+
+.a{
+    border-radius: 0px 10px 0px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.col-ld-1 {width: 8.33%;}
+	.col-ld-2 {width: 16.66%;}
+	.col-ld-3 {width: 25%;}
+	.col-ld-4 {width: 33.33%;}
+	.col-ld-5 {width: 41.66%;}
+	.col-ld-6 {width: 50%;}
+	.col-ld-7 {width: 58.33%;}
+	.col-ld-8 {width: 66.66%;}
+	.col-ld-9 {width: 75%;}
+	.col-ld-10 {width: 83.33%;}
+	.col-ld-11 {width: 91.66%;}
+	.col-ld-12 {width: 100%;}
+
+    .health_challng {
+        padding-inline: 4vw;
+    }
+
+    .search_illness {
+        padding-inline: 0;
+    }
+
+
+@media only screen and (max-width: 768px){
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+
+    .health_challng {
+        padding-inline: 2vw;
+    }
+
+    .health_challng h1{
+        font-size: 1.8rem;
+
+    }
+
+    .search_illness {
+        padding: 3rem 4vw;
+    }
+
+    .faq{
+        padding-inline: 2vw;
+    }
+
+    #faq {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.col-esd-1 {width: 8.33%;}
+	.col-esd-2 {width: 16.66%;}
+	.col-esd-3 {width: 25%;}
+	.col-esd-4 {width: 33.33%;}
+	.col-esd-5 {width: 41.66%;}
+	.col-esd-6 {width: 50%;}
+	.col-esd-7 {width: 58.33%;}
+	.col-esd-8 {width: 66.66%;}
+	.col-esd-9 {width: 75%;}
+	.col-esd-10 {width: 83.33%;}
+	.col-esd-11 {width: 91.66%;}
+	.col-esd-12 {width: 100%;}
+    
+    
+    .health_challng h1{
+        font-size: 2rem;
+    }
+
+    .search_illness {
+        padding: 50px 0px;
+    
+    }
+
+    .faq_boxes{
+        padding: 50px 0px;
+
+    }
+
+}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MedLine</title>
+
+		<link rel="stylesheet" type="text/css" href="style/chat_room.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	</head>
+	<body class="show_container">
+
+
+		<button id="container_toggle" onclick="show()">
+			<span class="bx bx-chat" id="chat"></span>
+			<span class="bx bx-x" id="cancel"></span>
+		</button>
+		<div class="container col-3 col-esd-12 " id="container">
+			<div class="top">
+				<h1 class="welcome">Welcome...</h1>
+				<i class="fa fa-user-md" aria-hidden="true" onclick="showDoctor()">
+					<span class="tooltip_txt">Doctor</span>
+				</i>
+			</div>
+
+            <div class="chat_messages " id="chat_messages">
+
+				<ul class="message" id="messages">
+					<li class="chat incoming">
+						<p class="message_doc">
+							<span class="doc">Dr. Christos</span>
+							Good day, <br> How can i help you today? 
+						</p>
+					</li>
+					<!-- <li class="chat_outgoing" id="chat_out">
+						<p class="message_user" id="message_user">I'm having serious back pain it makes my heart hurt</p>
+					</li> -->
+				</ul>
+
+            </div>
+			
+			<div class="chat_messages doc_chat_messages" id="doc_chat_messages">
+
+				<ul class="message doc_message" id="messages doc_messages">
+					<!-- <li class="chat outgoing" id="chat_out">
+						<p class="message_doc">
+							<span class="doc">Dr. Christos</span>
+							Good day, <br> How can i help you today? 
+						</p>
+					</li> -->
+					<li class="chat incoming" id="chat_in">
+						<p class="message_user" id="message_user"></p>
+					</li>
+				</ul>
+
+            </div>
+			
+
+			<div class="send_power col-12">
+				<div id="input">
+					<textarea name="text" id="chat_input" class="chat_input" placeholder="text a Doctor..." required></textarea>
+					<!-- <input type="text" class="chat_input" id="chat_input" placeholder="text a Doctor" required> -->
+					<button type="submit" id="send"><i class="bx bx-send" onclick="chat()"></i></button>
+				</div>
+	
+				<div class="power">
+					<span>Powered by MedLine</span>
+				</div>
+			</div>
+			
+            <!-- <button id="clear">Clear chat</button> -->
+		</div>
+
+	</body>
+
+    <script type="text/javascript" src="javascript/chat_room_script.js"></script>
+</html>

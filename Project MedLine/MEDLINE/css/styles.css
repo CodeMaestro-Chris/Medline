@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "DMSans";
+	scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'DMSans';
+    src: url('../DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+:root {
+	--_darkmode:  rgb(1, 11, 19);
+	--_darkerblue: rgb(6, 51, 82);
+	--_darkblue: rgba(19, 79, 119, 0.7);
+	--_lightblue: rgb(59, 157, 222);
+	--_textcolor: rgb(240, 248, 255);
+	--_bodybc: rgb(240, 248, 255);
+	--_boldtext: rgb(0, 120, 201);
+}
+
+#body {
+	background-color: var(--_bodybc);
+}
+#body.dark-mode{
+	background-color: var(--_darkmode);
+	color: var(--_textcolor);
+}
+
+
+
+/*Styling for SECTION Banner starts HERE*/
+#banner {
+	padding: 30vh 7vw 28vh;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../imgs/group-african-medical-students-posed-outdoor-against-university-door.jpg');
+	background-position: top center;
+	background-size: cover;
+	z-index: 4;
+}
+
+#name {
+	font-size: 3.5rem;
+	padding-bottom: 1.5rem;
+
+	color: var(--_boldtext);
+	animation: glow 1.5s infinite;
+}
+  
+  @keyframes glow {
+	from {
+		text-shadow: 0 0 0px #f0f8ff, 0 0 5px #f0f8ff, 0 0 10px #77c1f3, 0 0 15px #77c1f3, 0 0 20px #77c1f3, 0 0 25px #77c1f3, 0 0 30px #77c1f3;
+	}
+	
+	to {
+		text-shadow: 0 0 15px #f0f8ff, 0 0 20px #f0f8ff, 0 0 30px #77c1f3, 0 0 40px #77c1f3, 0 0 50px #77c1f3, 0 0 60px #77c1f3, 0 0 70px #77c1f3;
+	}
+  }
+
+#welcome {
+	font-size: 1.2rem;
+	font-weight: 540;
+	line-height: 28px;
+	color: var(--_textcolor);
+	padding-bottom: 2rem;
+}
+
+#we_can_help {
+	display: inline-block;
+	border-radius: .5rem;
+
+	background-color: var(--_lightblue);
+	color: var(--_textcolor);
+
+	font-weight: 540;
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding: .8em 2em;
+
+	transition: all .13s ease-in-out;
+}
+
+#we_can_help:hover {
+	background-color: var(--_darkerblue);
+	color: var(--_textcolor);
+}
+
+/*Styling for SECTION Banner ends HERE*/
+
+/* Styling for Partners section */
+.partners{
+    display: grid;
+    gap: 10px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1200px; /* Optional: Limit the width of the grid */
+    margin: 40px auto;
+    padding: 10px;
+	align-items: center;
+}
+.partners img{
+	min-width: 90px;
+	max-width: 100px; /* Image won't exceed the width of its container */
+	height: auto;    /* Maintain aspect ratio */
+	display: block;  /* Prevent inline spacing issues */
+}
+.partners img.leca{
+	min-width: 50px;
+	max-width: 70px; /* Image won't exceed the width of its container */
+	height: auto;    /* Maintain aspect ratio */
+	display: block;  /* Prevent inline spacing issues */
+}
+.partners img.nafdac{
+	min-width: 60px;
+	max-width: 80px; /* Image won't exceed the width of its container */
+	height: auto;    /* Maintain aspect ratio */
+	display: block;  /* Prevent inline spacing issues */
+}
+.partners img.unicef{
+	min-width: 100px;
+	max-width: 110px; /* Image won't exceed the width of its container */
+	height: auto;
+	display: block;
+}
+.partners img.teocare{
+	min-width: 100px;
+	max-width: 130px; /* Image won't exceed the width of its container */
+	height: auto;
+	display: block;
+}
+
+
+
+
+/*Styling for SECTION Labs starts HERE*/
+#labs {
+/*	border: 1px solid red;*/
+	padding: 10vh 10vw 7vh;
+
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+#a_labs {
+	padding-right: 5vw;
+}
+
+#med_lab {
+	font-size: 2.5rem;
+	padding-bottom: .7em;
+	color: var(--_boldtext);
+}
+
+#lab_list {
+	list-style-type: none;
+}
+
+#lab_list li {
+	padding-bottom: .5rem;
+	font-size: 1.2rem;
+}
+
+#lab_pic {
+	border-radius: 50%;
+	border: .5rem solid #16578339;
+}
+
+/*Styling for SECTION Labs ends HERE*/
+
+
+
+
+
+/*Styling for SECTION About starts HERE*/
+#about {
+	padding: 1rem 7vw 10vh;
+}
+
+.about_us {
+	padding: .8rem 1.4rem;
+	font-size: 2.5rem;
+	font-weight: 800;
+	text-align: center;
+	padding-bottom: 2rem;
+	color: var(--_boldtext);
+}
+
+#about_img{
+	border-radius: .4rem;
+	/* height: 100%; */
+}
+
+#image_ab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#about_t {
+	padding: 2rem 2rem 2rem 4rem;
+}
+
+.center {
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+
+#about_t #know {
+	font-size: 2rem;
+	color: var(--_lightblue);
+	padding-bottom: 1.5rem;
+}
+
+#brief_about {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+#reasons {
+	list-style-type: none;
+	font-size: 1.2rem;
+}
+
+#reasons .reason_list {
+	padding-bottom: .8rem;
+}
+
+.check {
+	color: var(--_lightblue);
+}
+
+.center_p {
+	padding-top: 2rem;
+}
+
+#more_about {
+	display: inline-block;
+	border: 2px solid var(--_boldtext);
+	color: var(--_boldtext);
+	text-decoration: none;
+	
+	padding: .7rem 1.5rem;
+	border-radius: .4rem;
+
+	transition: all .3s ease-in-out;
+}
+
+#more_about:hover {
+	background-color: var(--_lightblue);
+	color: var(--_textcolor);
+	border: 2px solid var(--_lightblue);
+}
+
+#more_about:active {
+	transform: translateY(.2rem);
+}
+/*Styling for SECTION About ends HERE*/
+
+
+
+
+
+/*Styling for SECTION Health challenges starts HERE*/
+#health_cha {
+	padding-inline: 7vw;
+}
+
+#challenges {
+	font-size: 2.5rem;
+	text-align: center;
+	color: var(--_boldtext);
+	font-weight: 800;
+
+	padding-bottom: 2rem;
+}
+
+#wrapper {
+	display: flex;
+}
+
+.container {
+	padding: .5rem;
+}
+
+@keyframes slide_left {
+	0% {
+		opacity: 0;
+		transform: translateX(-.8rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.container:nth-of-type(1) .content{
+	padding: 1rem;
+}
+
+#ct {
+	color: var(--_boldtext);
+	animation: slide_left .8s ease-in-out;
+}
+
+@keyframes slide_top {
+	0% {
+		opacity: 0;
+		transform: translateY(1.4rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.container:nth-of-type(2) .content {
+	animation: slide_top .8s ease-in-out;
+}
+
+.container:nth-of-type(3) .content {
+	animation: slide_top 1.2s ease-in-out;
+}
+
+.container:nth-of-type(2) .content,
+.container:nth-of-type(3) .content {
+    background-color: var(--_lightblue);
+	color: var(--_textcolor);
+	border-radius: .4rem;
+	padding: 1rem;
+
+	transition: background-image .3s ease-in-out;
+}
+
+.container:nth-of-type(2) .content:hover,
+.container:nth-of-type(3) .content:hover {
+	background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/med1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#what_toknow {
+	font-size: 1.2rem;
+	padding: 2rem 0rem 1rem;
+
+	animation: slide_top .8s ease-in-out;
+}
+
+#challenges_link {
+	display: inline-block;
+	color: var(--_boldtext);
+	border: 2px solid var(--_boldtext);
+
+	text-decoration: none;
+
+	padding: .7rem 1.5rem;
+	border-radius: .4rem;
+	
+	animation: slide_top 1s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#challenges_link:hover {
+	color: var(--_textcolor);
+	border: 2px solid var(--_lightblue);
+	background-color: var(--_lightblue);
+}
+
+#challenges_link:active {
+	transform: translateY(.1rem);
+}
+
+.container:nth-of-type(2) .content .symtoms,
+.container:nth-of-type(3) .content .symtoms{
+	font-size: 1.2rem;
+	padding: 1.5rem 0rem 1rem;
+}
+
+.container:nth-of-type(2) .content .treatments,
+.container:nth-of-type(3) .content .treatments {
+	font-size: 1.2rem;
+}
+
+#illness1, #illness2 {
+	font-weight: 800;
+}
+/*Styling for SECTION Health challenges endss HERE*/
+
+
+
+
+
+/*Styling for SECTION Doctors starts HERE*/
+#docs {
+	padding-top: 8vh;
+	padding-inline: 4vw;
+
+}
+
+#docs_head {
+	text-align: center;
+}
+
+#head_docs {
+	display: inline-block;
+	border: 2px solid var(--_lightblue);
+	border-radius: 2rem;
+	padding: .8rem 1.4rem;
+
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+#head_spec {
+	padding-top: 1.5rem;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 800;
+
+
+	color: var(--_boldtext);
+}
+
+.doc_wrapper {
+	overflow: auto;
+	padding-block: 2rem;
+
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.doc_container {
+	padding: .8rem;
+}
+
+.doc_container .doc_content {
+	box-shadow: 3px 3px 10px var(--_boldtext);
+	padding-top: 40vh;	
+
+
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	overflow: hidden;
+
+	transition: all .3s ease-in-out;
+}
+
+.doc_container .doc_content:hover {
+	transform: scale(.95);
+}
+
+.doc_container:nth-last-of-type(1) .doc_content {
+	background-image: url('../imgs/spec4.jpg');
+}
+
+.doc_container:nth-last-of-type(2) .doc_content {
+	background-image: url('../imgs/spec1.jpg');
+}
+
+.doc_container:nth-last-of-type(3) .doc_content {
+	background-image: url('../imgs/spec2.jpg');
+}
+
+.doc_container:nth-last-of-type(4) .doc_content {
+	background-image: url('../imgs/spec3.jpg');
+}
+
+.title {
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.1rem;
+	padding-block: 1rem;
+
+	background-color: var(--_textcolor);
+	color: var(--_boldtext);
+
+	/*border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;*/
+}
+
+/*Styling for SECTION Doctors ends HERE*/
+
+
+
+/* Large devices (laptops/desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+	.col-ld-1 {width: 8.33%;}
+	.col-ld-2 {width: 16.66%;}
+	.col-ld-3 {width: 25%;}
+	.col-ld-4 {width: 33.33%;}
+	.col-ld-5 {width: 41.66%;}
+	.col-ld-6 {width: 50%;}
+	.col-ld-7 {width: 58.33%;}
+	.col-ld-8 {width: 66.66%;}
+	.col-ld-9 {width: 75%;}
+	.col-ld-10 {width: 83.33%;}
+	.col-ld-11 {width: 91.66%;}
+	.col-ld-12 {width: 100%;}
+
+/*Styling for SECTION banner starts HERE*/
+	#name {
+		font-size: 3rem;
+	}
+
+	#welcome {
+		font-size: 1.4rem;
+	}
+
+	#we_can_help {
+		font-size: 1.1rem;
+	}
+/*Styling for SECTION banner endss HERE*/
+
+
+	#nav_list li .nav_links {
+		font-size: 1rem;
+	}
+	
+	#about_t #know {
+		font-size: 1.6rem;
+	}
+
+	#brief_about {
+		font-size: .9rem;
+	}
+}
+
+/* Medium devices (landscape tablets, 992px and down) */
+@media only screen and (max-width: 992px) {
+
+	.col-md-1 {width: 8.33%;}
+	.col-md-2 {width: 16.66%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33%;}
+	.col-md-5 {width: 41.66%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33%;}
+	.col-md-8 {width: 66.66%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33%;}
+	.col-md-11 {width: 91.66%;}
+	.col-md-12 {width: 100%;}
+
+/*Styling for SECTION Labs starts HERE*/
+	#labs {
+		padding-inline: 4vw;
+	}
+
+	#a_labs {
+		padding-right: 1.5rem;
+	}
+	
+	#lab_list li {
+		font-size: 1.2rem;
+	}
+/*Styling for SECTION Labs Endss HERE*/
+
+
+/*Styling for SECTION Health challenges starts HERE*/
+
+	#health_cha {
+		padding-inline: 5vw;
+	}
+
+/*Styling for SECTION Health challenges ends HERE*/
+
+
+	#about {
+		padding-inline: 4vw;
+		/* border: 2px solid var(--_boldtext); */
+	}
+
+	#about_t {
+		padding-left: 3rem;
+	}
+
+	#know {
+		font-weight: 800;
+	}
+
+
+
+/*Styling for SECTION Doctors starts HERE*/
+	#docs {
+		padding-inline: 3vw;
+	}
+
+/*Styling for SECTION Doctors ends HERE*/
+
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+
+	.col-sd-1 {width: 8.33%;}
+	.col-sd-2 {width: 16.66%;}
+	.col-sd-3 {width: 25%;}
+	.col-sd-4 {width: 33.33%;}
+	.col-sd-5 {width: 41.66%;}
+	.col-sd-6 {width: 50%;}
+	.col-sd-7 {width: 58.33%;}
+	.col-sd-8 {width: 66.66%;}
+	.col-sd-9 {width: 75%;}
+	.col-sd-10 {width: 83.33%;}
+	.col-sd-11 {width: 91.66%;}
+	.col-sd-12 {width: 100%;}
+
+
+
+/*Styling for SECTION Labs starts HERE*/
+	#labs {
+		padding-inline: 4vw;
+	}
+
+	#a_labs {
+		padding-right: 1.5rem;
+	}
+	 
+	#lab_list li {
+		font-size: 1.2rem;
+	}
+/*Styling for SECTION Labs Endss HERE*/
+
+
+
+/*Styling for SECTION Health challenges starts HERE*/
+
+	#health_cha {
+		padding-inline: 4vw;
+	}
+	#wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.container {
+		float: none;
+	}
+
+/*Styling for SECTION Health challenges ends HERE*/
+
+
+/*Styling for SECTION About starts HERE*/
+	#about {
+		padding-inline: 2vw;
+		margin-inline: 2vw;
+		flex-direction: column;
+		border-radius: .8rem;
+		padding-bottom: 4vh;
+
+		/* border: 2px solid var(--_boldtext); */
+	}
+
+	#image_ab {
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+
+	#about_t {
+		padding-inline: 1rem;
+		padding-bottom: 0;
+	}
+
+	#brief_about {
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	#reasons .reason_list{
+		font-size: 1rem;
+	}
+/*Styling for SECTION About ends HERE*/
+
+
+/*Styling for SECTION Doctors starts HERE*/
+	#docs {
+		padding-inline: 2vw;
+	}
+
+/*Styling for SECTION Doctors ends HERE*/
+
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.col-esd-1 {width: 8.33%;}
+	.col-esd-2 {width: 16.66%;}
+	.col-esd-3 {width: 25%;}
+	.col-esd-4 {width: 33.33%;}
+	.col-esd-5 {width: 41.66%;}
+	.col-esd-6 {width: 50%;}
+	.col-esd-7 {width: 58.33%;}
+	.col-esd-8 {width: 66.66%;}
+	.col-esd-9 {width: 75%;}
+	.col-esd-10 {width: 83.33%;}
+	.col-esd-11 {width: 91.66%;}
+	.col-esd-12 {width: 100%;}
+
+/*Styling for SECTION banner starts HERE*/
+	#name {
+		font-size: 2.5rem;
+	}
+
+	#welcome {
+		font-size: .9rem;
+	}
+
+	#we_can_help {
+		font-size: .9rem;
+	}
+/*Styling for SECTION banner endss HERE*/
+
+
+/*Styling for SECTION About starts HERE*/
+	#about {
+		padding-inline: 2vw;
+		margin-inline: 2vw;
+		flex-direction: column;
+		border-radius: .8rem;
+		padding-bottom: 4vh;
+
+		border: 2px solid var(--_boldtext);
+	}
+
+	#image_ab {
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+
+	#about_t {
+		padding-inline: 1rem;
+		padding-bottom: 0;
+	}
+
+	
+/*Styling for SECTION About ends HERE*/
+
+
+
+
+/*Styling for SECTION Labs starts HERE*/
+	#labs {	
+		flex-direction: row;
+		flex-direction: column;
+		justify-content: center;
+
+		padding-inline: 4vw;
+	} 
+
+	#a_labs {
+		padding-top: 3vh;
+	}
+
+	#med_lab {
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	#lab_list li{
+		font-size: 1.1rem;
+	}
+/*Styling for SECTION Labs ends HERE*/
+
+
+/*Styling for SECTION Health challenges starts HERE*/
+	#health_cha {
+		padding-top: 10vh;
+	}
+
+	#wrapper {
+		flex-direction: column-reverse;
+	}
+
+	#what_toknow {
+		font-size: 1.2rem;
+		padding-bottom: 2rem;
+	}
+
+	#challenges_link {
+		font-size: 1rem;
+		padding: .7rem 1.8rem;
+		border-radius: .4rem;
+	}
+
+	#challenges {
+		font-size: 2.3rem;
+	}
+/*Styling for SECTION Health challenges ends HERE*/
+
+}
+
+

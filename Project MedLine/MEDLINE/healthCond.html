@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MedLine</title>
+
+	       	<link rel="shortcut icon" href="imgs/MedLine_logo.png" type="image/x-icon">
+       		<link rel="stylesheet" type="text/css" href="css/head_foot.css">
+        <link rel="stylesheet" type="text/css" href="css/healthCond_style.css">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        
+        <header >
+            <nav id="nav_bar" class="col-12">
+                <div id="logo_name" class="col-5">
+                    <div id="logo_img">
+                        <img src="imgs/MedLine_logo_min.png" id="logo">
+                    </div>
+
+                    <a href="index.html" id="site_name" class="glow">MedLine</a>
+                </div>
+
+                <ul id="nav_list" class="col-7">
+                    <li><a href="index.html" class="nav_links">Home</a></li>
+                    <li><a href="about-us.html" class="nav_links">About Us</a></li>
+                    <li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
+                    <li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
+                </ul>
+
+                <div id="bars" onclick="show_nav()">
+                    <div class="bars1">
+                        <div class="top"></div>
+                        <div class="middle"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    
+                    <div class="nav_list2 col-md-12" id="hidden_nav">
+                        <li><a href="index.html" class="nav_links">Home</a></li>
+                        <li><a href="about-us.html" class="nav_links">About Us</a></li>
+                        <li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
+                        <li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
+                    </div>	
+                </div>
+            </nav>
+        </header>
+
+        <section class="health_challng">
+
+            <h1>Health Challenges & Treatments</h1>
+
+            <p class="health_p col-8 col-md-10 col-sm-12">Get easy to understand answers about diseases, conditions and their treatments.</p>
+
+            <div class="search_div col-6 col-md-9 col-esd-11">
+                <input type="text" class="col-12" id="search_bar" onkeyup="filter()" placeholder="Search for illness...">
+                <span class="fa fa-search" id="search_icon"></span>
+            </div>
+            
+
+            <div class="search_illness" id="main_illness">
+
+                <div class="ill col-md-12 col-sm-12" onclick="illness_Dropdown()" id="IllDropDown">
+                    <p class= "illName">Typhoid</p>
+
+                    <div class="ill_dropdown" id="dropdown_content" >
+                        <p class="causes">Causes <br>
+                            Often picked up in place where there are outbreaks,the bacteria passes out of the body in the stool and urine of people who are carrying the bacteria. Without careful hand-washing after going to the bathroom, the bacteria can move from the hands to objects or other people...
+                            It can also be gotten from raw fruits that haven't been washed or from places where water isn't treated to kill germs: which includes drinking water and using ice from untreated water. 
+                        </p>
+                        <p class="symptoms">Symptoms <br>
+                            Fever, chills, headache, fatigue, muscle pains, stomach ache, diarrhea and constipation and/or rashes.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                            See a doctor as soon as possible and take the prescribed antibiotics as instructed. Drink a lot of water.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill1 ill col-md-12 col-sm-12" onclick="illness_Dropdown1()" id="IllDropDown">
+                    <p class= "illName">Cough</p>
+
+                    <div class="ill_dropdown1" id="dropdown_content1" >
+
+                        <!-- <p>Cough</p> -->
+
+                        <p class="causes">Causes <br>
+                            A cough thta happens once in a while is common. It helps clear mucus from your lungs and prevents infection. But a cough that lasts for weeks is usually due to a health concern and might be either of the following reasons: <br><br>
+                            Asthma-  An asthma-related cough might be seasonal, often emerging after a respiratory infection. It can also worsen with exposure to cold air, certain chemicals, or fragrances. In a type of asthma called cough-variant asthma, coughing is the primary symptom.  <br>
+
+                            Postnasal drip- When your nose or sinuses produce extra mucus, it can drip down the back of your throat and cause you to cough. This condition also is called upper airway cough syndrome. <br>
+
+                            Infections- A cough can last long after other symptoms of pneumonia, flu, a cold or another infection of the upper respiratory tract have gone away. A common cause of a chronic cough in adults — but one that often isn't recognized — is whooping cough.  <br>   
+                        </p>
+
+                        <p class="symptoms">Symptoms <br>
+                            A running nose, a feeling of liquid running down the back of your throat, also known as postnasal drip, sore throat, hoarseness, shortness of breath. In rare cases, coughing of blood.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                            See a doctor if its a cough that lasts for weeks, especially one that brings up sputum or blood, disturbs your sleep, or affects school or work..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill2 ill col-md-12 col-sm-12" onclick="illness_Dropdown2()" id="IllDropDown">
+                    <p class= "illName">Malaria</p>
+
+                    <div class="ill_dropdown2" id="dropdown_content2" >
+
+                        <p class="causes">Causes <br>
+                            Malaria iscaused by a parasite. The parasite is transmitted to humans most commonly through mosquito bites. It could also be passed from moother to unborn child, through blood transfusions and by sharing needles used to inject drugs.
+                        </p>
+
+                        <p class="symptoms">Symptoms <br>
+                            Feeling of discomfort, fever, chills, headache, vomiting, diarrhea, stomach pains, muscle/joint pain, fatigue, cough, rapid breathing, rapid heartbeat.
+                        </p>
+
+                        <p class="treats">Treatments / Medication <br>
+                            See a doctor once symptoms persist or become severe.Take medication as instructed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill3 ill col-md-12 col-sm-12" onclick="illness_Dropdown3()" id="IllDropDown">
+                    <p class= "illName">Cold</p>
+
+                    <div class="ill_dropdown3" id="dropdown_content3" >
+
+
+                        <p class="causes">Causes <br>
+                            It is a common illness that affects the nose and throat. Most often, its harmless but might not feel that way.Germs called viruses cause a common cold.
+                        </p>
+
+                        <p class="symptoms">Symptoms <br>
+                            Generally feeling unwell, runny/stuffy nose, sore throat, cough, sneezing, mild headache.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                            See a doctor if symptoms become severe, fever persists, shortness of breath or any of the other symptoms persist as it could be a symptom for something severe.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill4 ill col-md-12 col-sm-12" onclick="illness_Dropdown4()" id="IllDropDown">
+                    <p class= "illName">Pneumonia </p>
+
+                    <div class="ill_dropdown4" id="dropdown_content4" >
+
+                        <p class="causes">Causes <br>
+                            Pneumonia is an infection that causes inflammation in the air sacs of one or both lungs. These air sacs can fill with fluid or pus, leading to symptoms like coughing with mucus, fever and trouble breathing. Pneumonia can be caused by various organisms, including bacteria, viruses, and fungi..
+                        </p>
+
+                        <p class="symptoms">Symptoms <br>
+                            Chest pain when you breathe or cough, Cough, Fever, Nausea, vomiting or diarrhea, shortness of breath and lower than normal body temperature (in adults older than age 65 and people with weak immune systems).
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                            Please see a doctor once symptoms persist or become severe. It is often adviced to get antibiotics, cough medicine and pain relievers
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill5 ill col-md-12 col-sm-12" onclick="illness_Dropdown5()" id="IllDropDown">
+                    <p class= "illName">Cholera</p>
+
+                    <div class="ill_dropdown5" id="dropdown_content5" >
+
+                        <p class="causes">Causes <br>
+                            Cholera infection is caused by a bacteria whose harmful effects are caused by a toxin that the bacteria releases in the small intestine.The toxin causes the body to secrete enormous amounts of water, leading to diarrhea and a rapid loss of fluids and salts.Contaminated water supplies are the main source of cholera infection and the bateria can be found in contaminated water reserves, raw unwashed fruits and vegetables and places where grains like rice and millet left at room temperature can grow cholera bacteria.
+                        </p>
+                        <p class="symptoms">Symptoms <br>
+                            Diarrhea, vomiting, fatigue, a dry mouth/extreme thirst, little to no urination, low blood pressure and an irregular heartbeat, dehydration and when it is more severe can cause electrolyte imbalance whose symptoms include muscle cramps and shock.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                            Take preventive measures such as washing hands often and drinking purified water.Take antibiotics and meet a doctor if symptoms persist.
+                        </p>
+                    </div>      
+                </div>
+
+                <div class="ill6 ill col-md-12 col-sm-12" onclick="illness_Dropdown6()" id="IllDropDown">
+                    <p class= "illName">Diarrhea</p>
+
+                    <div class="ill_dropdown6" id="dropdown_content6" >
+
+                        <p class="causes">Causes <br>
+                            Diarrhea is a common condition characterized by frequent, loose, and watery stools.Sometimes, it's the only warning sign of a condition. Other times, it may come with symptoms like nausea, vomiting, stomach aches, or weight loss.It can be caused by viruses, bacteria and parasites, medicines, surgery or other digestive disorders.
+                        </p>
+
+                        <p class="symptoms">Symptoms <br>
+                            stomach pain, bloating, vomiting, fever, frequent stooling, blood/mucus in stool.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                                See a doctor if the stooling persists for more than two days or you're dehydrated or having bloody stools or terrible abdominal pains. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill7 ill col-md-12 col-sm-12" onclick="illness_Dropdown7()" id="IllDropDown">
+                    <p class= "illName"> Urinary Track Infection (UTI)</p>
+
+                    <div class="ill_dropdown7" id="dropdown_content7" >
+
+                        <p class="causes">Causes <br>
+                            UTI is an infection in any part if the urinary system. It is normally caused by an infection of the urethra or the infection of the bladder.
+                        </p>
+                        <p class="symptoms">Symptoms <br>
+                            Strong urge to urinate that doesn't go away, signs of blood in the urine, a burning feeling when urinating, urinating frequently and passing small amounts of urine, strong smelling urine, pelvic pain-in women especially  in the center of the pelvis and around the area of the pubic bone.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                        See a doctor once you notice any symptoms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill8 ill col-md-12 col-sm-12" onclick="illness_Dropdown8()" id="IllDropDown">
+                    <p class= "illName">Cold Sores</p>
+
+                    <div class="ill_dropdown8" id="dropdown_content8" >
+
+                        <p class="causes">Causes <br>
+                            Cold sores, also known as fever blisters, are a common viral infection. They appear as small, fluid-filled blisters on or around the lips, often forming in clusters.It can be spread to the fac or genitals through contact such as kissin gand oral sex. Shared eating utensils, razors and towels can also transmit cold sores.
+                        </p>
+                        <p class="symptoms">Symptoms <br>
+                            Tingling and itching, Blisters, Oozing and crusting, fever, headache, sore throat, painful gums, muscle aches, swollen lymph nodes.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                            See a doctor if the cold sores don't heal within two weeks and the symptoms become severe.Also if the cold sores return often or you have a weak immune system, get in contact with a doctor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ill9 ill col-md-12 col-sm-12" onclick="illness_Dropdown9()" id="IllDropDown">
+                    <p class= "illName">Herpes</p>
+
+                    <div class="ill_dropdown9" id="dropdown_content9" >
+
+                        <p class="causes">Causes <br>
+                            Genital herpes is a common sexually transmitted infection (STI).Genital herpes can often be spread by skin-to-skin contact during sexual activity.
+                            Some people infected with the virus may have very mild symptoms or no symptoms. They can still able to spread the virus. Other people have pain, itching and sores around the genitals, anus or mouth.
+                        </p>
+                        <p class="symptoms">Symptoms <br>
+                            Pain or itching around the genitals, small bumps or blisters around the genitals, anus or mouth, painful ulcers that form when blisters rupture and ooze or bleed, scabs that form as the ulcers heal, painful urination, discharge from the urethra, discharge from the vagina.You might also experience flu-like symptoms in the first outbreak such as fever, swollen nymph lodes in the groin, headaches and body aches.
+                        </p>
+                        <p class="treats">Treatments / Medication <br>
+                        There is no cure for genital herpes. Symptoms often show up again after the first outbreak. Medicine can ease symptoms. It also lowers the risk of infecting others. Condoms can help prevent the spread of a genital herpes infection. However, do meet a doctor if you notice any symptoms.
+                        </p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <section class="faq">
+
+            <h1 id="faq ">Frequently Asked Questions (FAQs)</h1>
+
+            <div class="faq_boxes">
+                <div class="q col-5 col-md-5 col-esd-12">What should I do if I have symptoms of illness?</div>
+                <div class="a col-5 col-md-6 col-esd-12">If you're experiencing symptoms, it's important to consult a healthcare provider for proper diagnosis and treatment. You can use our online consultation feature to speak with a doctor.</div>
+                <div class="q col-5 col-md-5 col-esd-12">How can I book an appointment with a doctor?</div>
+                <div class="a col-5 col-md-6 col-esd-12">You can book an appointment directly on our website by selecting your preferred doctor and available time slot.</div>
+                <div class="q col-5 col-md-5 col-esd-12">Are online consultations as effective as in-person visits?</div>
+                <div class="a col-5 col-md-6 col-esd-12"> Online consultations can be very effective for many conditions, especially for follow-ups or non-emergency situations. However, for serious concerns, in-person visits may be necessary.</div>
+                <div class="q col-5 col-md-5 col-esd-12">How do I know if an online consultation is right for me?</div>
+                <div class="a col-5 col-md-6 col-esd-12">Online consultations are great for many common health issues, follow-ups, or general advice. If you're unsure, our team can guide you on whether an in-person visit might be more appropriate</div>
+            </div>
+
+
+        </section>
+
+        <footer id="footer">
+			<div id="footer_sub">	
+				<div id="sub" class="col-6 col-sd-8 col-esd-12 ">
+					<h4 id="sub_">Subscribe To Our Newsletter</h4>
+
+
+					<input type="email" id="email" class="col-6 col-ld-9 col-esd-11 " placeholder="Enter Email Address">
+					<button type="submit" id="btn_sub" onclick="send()" class="col-3 col-ld-4 col-sd-5 col-esd-6 ">Subscribe</button>
+
+					<!-- <span id="thanks">Thank you for subscribing</span> -->
+				</div>
+
+				<div id="socials">
+					<h4 id="follow">Follow and Engage with us:</h4>
+
+					<div id="so">	
+						<ul>
+							<li><a href="#" class="fa fa-instagram social_icon"></a></li>
+							<li><a href="#" class="fa fa-youtube-play social_icon"></a></li>
+							<li><a href="#" class="fa fa-linkedin-square social_icon"></a></li>
+							<li><a href="#" class="fa fa-twitter social_icon"></a></li>
+							<li><a href="#" class="fa fa-facebook social_icon"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div id="copyright">
+				<span id="copy">© 2024-MedLine.</span>
+				<span id="rights">All rights reserved</span>
+			</div>
+		</footer>
+        
+    </body>
+    <script src="js/healthCond_script.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</html>
