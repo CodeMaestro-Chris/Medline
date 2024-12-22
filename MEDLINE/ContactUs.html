@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MedLine</title>
+
+	<link rel="shortcut icon" href="imgs/MedLine_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/head_foot.css">
+	<link rel="stylesheet" type="text/css" href="css/ContactUs_style.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+
+	<header >
+		<nav id="nav_bar" class="col-12">
+			<div id="logo_name" class="col-5">
+				<div id="logo_img">
+					<img src="imgs/MedLine_logo_min.png" id="logo">
+				</div>
+
+				<a href="index.html" id="site_name" class="glow">MedLine</a>
+			</div>
+
+			<ul id="nav_list" class="col-7">
+				<li><a href="index.html" class="nav_links">Home</a></li>
+				<li><a href="about-us.html" class="nav_links">About Us</a></li>
+				<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
+				<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
+			</ul>
+
+			<div id="bars" onclick="show_nav()">
+				<div class="bars1">
+					<div class="top"></div>
+					<div class="middle"></div>
+					<div class="bottom"></div>
+				</div>
+				
+				<div class="nav_list2 col-md-12" id="hidden_nav">
+					<li><a href="index.html" class="nav_links">Home</a></li>
+					<li><a href="about-us.html" class="nav_links">About Us</a></li>
+					<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
+					<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
+				</div>	
+			</div>
+		</nav>
+	</header>
+
+
+	<!-- Contact Starts HERE -->
+	<div class="contact_container">
+		<h2 class="contact_us">Contact Us</h2>
+	
+		<div class="container col-12 col-6"> 
+			<div class="contain-right">
+				<form>
+					<div class="flex-items col-12">
+						<div class="inputs col-6 col-esd-12">
+							<input type="name" id="name" placeholder="Your Name" class="col-12">
+							<input type="email" id="email_" placeholder="Your Email" class="col-12">
+							<input type="phone number" id="number" placeholder="Your Phone number" class="col-12">
+						</div>
+				
+						<textarea class="col-6 col-esd-12" placeholder="Your message..." id="text"></textarea>
+						<br>
+	
+					</div>
+					
+					<div class="btn-div">
+						<button class="send col-1 col-ld-2 col-esd-3" type="reset" onclick="send()">Send</button>
+					</div>
+				</form>
+				
+			</div> 
+			 
+			<div class="contain-left">
+	
+				<h2>Get in Touch</h2>
+				
+				<div class="contacts">
+					<div class="cont1 col-6 col-esd-12">
+						<span>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							Head Office: 1, Kaduna Streetx
+							D-line, Port-harcourt
+						</span>
+	
+						
+						<span>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							Phone Number: +234 1234567899
+						</span>
+					
+	
+						<span>			
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							medline@gmail.com
+						</span>			
+					</div>
+	
+					<iframe class="col-6 col-esd-12" id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.9138169062292!2d7.000159340349162!3d4.799627940327539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce9948d6eb67%3A0x6d756048b6223638!2s1%20Kaduna%20Street!5e0!3m2!1sen!2sng!4v1731450024082!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div id="footer_sub">	
+			<div id="sub" class="col-6 col-sd-8 col-esd-12">
+				<h4 id="sub_">Subscribe To Our Newsletter</h4>
+
+				<input type="email" id="email" class="col-6 col-ld-9 col-esd-11 " placeholder="Enter Email Address">
+				
+				<button type="submit" id="btn_sub" onclick="send()" class="col-3 col-ld-4 col-sd-5 col-esd-6 ">Subscribe</button>
+				<!-- <span id="thanks">Thank you for subscribing</span> -->
+			</div>
+
+			<div id="socials">
+				<h4 id="follow">Follow and Engage with us:</h4>
+
+				<div id="so">	
+					<ul>
+						<li><a href="#" class="fa fa-instagram social_icon"></a></li>
+						<li><a href="#" class="fa fa-youtube-play social_icon"></a></li>
+						<li><a href="#" class="fa fa-linkedin-square social_icon"></a></li>
+						<li><a href="#" class="fa fa-twitter social_icon"></a></li>
+						<li><a href="#" class="fa fa-facebook social_icon"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<div id="copyright">
+			<span id="copy">© 2024-MedLine.</span>
+			<span id="rights">All rights reserved</span>
+		</div>
+	</footer>
+
+	<!-- Probably a div would hold the iframe(Read it up!) -->
+</body>
+
+<script src="js/ContactUs_script.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
