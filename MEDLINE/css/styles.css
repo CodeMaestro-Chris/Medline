@@ -114,6 +114,14 @@
 	border: 1px solid var(--_textcolor);
 	border-radius: 100%;
 }
+.to-the-top{
+	border-radius: 100%;
+	border: none;
+	padding: 10px 11px;
+    cursor: pointer;
+    color: var(--_bodybc);
+	background-color: var(--_boldtext);
+}
 #bars {
 	display: none;
 	cursor: pointer;
@@ -606,7 +614,7 @@
 }
 
 .doc_container:nth-last-of-type(2) .doc_content {
-	background-image: url('../imgs/43a9b307-b9d2-41cd-a6e2-2f126f40939b.jfif');
+	background-image: url('../imgs/spec1.jpg');
 }
 
 .doc_container:nth-last-of-type(3) .doc_content {
