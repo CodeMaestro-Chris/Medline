@@ -287,47 +287,6 @@
 
 
 
-
-/*Styling for SECTION Labs starts HERE*/
-#labs {
-/*	border: 1px solid red;*/
-	padding: 10vh 10vw 7vh;
-
-	display: flex;
-	align-items: center;
-	flex-direction: row-reverse;
-}
-
-#a_labs {
-	padding-right: 5vw;
-}
-
-#med_lab {
-	font-size: 2.5rem;
-	padding-bottom: .7em;
-	color: var(--_boldtext);
-}
-
-#lab_list {
-	list-style-type: none;
-}
-
-#lab_list li {
-	padding-bottom: .5rem;
-	font-size: 1.2rem;
-}
-
-#lab_pic {
-	border-radius: 50%;
-	border: .5rem solid #16578339;
-}
-
-/*Styling for SECTION Labs ends HERE*/
-
-
-
-
-
 /*Styling for SECTION About starts HERE*/
 #about {
 	padding: 1rem 7vw 10vh;
@@ -339,12 +298,49 @@
 	font-weight: 800;
 	text-align: center;
 	color: var(--_boldtext);
+	margin-bottom: 30px;
 }
 
 #about_img{
 	border-radius: .4rem;
 	/* height: 100%; */
 }
+#pics{
+	padding: 10px;
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#pics .pic1{
+	width: 100%;
+	background-image: url(../imgs/f6721ccf-5d9b-406b-b59a-1546f5270a16.jfif);
+	background-size: cover;
+	border-radius: 0px 0px 15px 80px;
+	background-position: center;
+	height: 25vh
+}
+#pics .pic2{
+	width: 100%;
+	background-image: url(../imgs/african-woman-biochemist-researcher-checking-manifestations-vaccine-working-modern-equipped-laboratory-multiethnic-doctors-examining-virus-evolution-using-high-tech-researching-diagnosis.jpg);
+	background-size: cover;
+	height: 25vh;
+	border-radius: 80px 0px 0px 15px;
+}
+#pics .pic3{
+	width: 100%;
+	background-image: url(../imgs/flu-disease-healthcare-medicine-concept-happy-african-american-male-doctor-white-coat-present-new-drugs-cure-from-disease-viruses-showing-pills-guarantee-good-quality-treatment.jpg);
+	border-radius: 0px 15px 80px 0px;
+	background-size: cover;
+	height: 25vh;
+}
+#pics .pic4{
+	width: 100%;
+	background-image: url(../imgs/med5.jpg);
+	background-size: cover;
+	border-radius: 15px 80px 0px 0px;
+	height: 25vh;
+}
+
 
 #image_ab {
 	display: flex;
@@ -410,7 +406,25 @@
 }
 /*Styling for SECTION About ends HERE*/
 
-
+/* Our Mission Section */
+.mission{
+	padding: 5rem;
+	background-image: linear-gradient(180deg, rgba(1, 11, 19, 0.872), rgba(1, 11, 19, 0.874)), url(../imgs/top-view-stethoscope.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin-bottom: 80px;
+	font-size: large;
+	line-height: 26px;
+	color: white;
+}
+.mission-title{
+	margin-bottom: 30px;
+	font-size: 2.7rem;
+	font-weight: 800;
+	text-align: center;
+	color: var(--_boldtext);
+}
 
 
 
