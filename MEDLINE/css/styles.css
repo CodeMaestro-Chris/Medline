@@ -268,7 +268,7 @@
     gap: 20px; /* Space between grid items */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* makes grid to fit every view */
     /* max-width: 1100px; Optional: Limit the width of the grid */
-    margin: 10px auto;
+    margin: 10px auto 30px;
     padding: 10px 10px 10px 70px;
 	align-items: center;
 }
@@ -309,7 +309,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
 	gap: 80px;
-	margin: 60px auto;
+	margin: 80px auto 60px;
 	padding: 0 20px;
 }
 .hero-cta img{
@@ -502,6 +502,7 @@
 /*Styling for SECTION Health challenges starts HERE*/
 #health_cha {
 	padding-inline: 7vw;
+	margin: 9rem auto 8rem;
 }
 
 #challenges {
@@ -623,7 +624,32 @@
 /*Styling for SECTION Health challenges endss HERE*/
 
 
+/* Styling for slideshow section */
+.slideshow-container {
+    position: relative;
+	height: 90vh;
+    width: 100%;
+    max-width: 1300px;
+	margin: 80px auto 60px;
+    overflow: hidden;
+}
+.slideshow-container h2{
+	margin-bottom: 50px;
+	font-size: 2.6rem;
+	font-weight: 800;
+	text-align: center;
+	color: var(--_boldtext);
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* 100% x number of slides */
+}
 
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
 
 
 /*Styling for SECTION Doctors starts HERE*/
@@ -914,13 +940,23 @@
 	.partners{
 		padding: 10px;
 		padding-inline: 4px;
-		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); ;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	}
 	.partners img{
 		width: 40px;
 	}
 	.partners .leca{
 		display: none !important;
+	}
+	.hero-cta{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.slideshow-container{
+		height: 50vh;
+	}
+	.slides{
+		height: 40vh;
 	}
 
 	#brief_about {
@@ -937,6 +973,7 @@
 /*Styling for SECTION Doctors starts HERE*/
 	#docs {
 		padding-inline: 2vw;
+		margin-top: 0px;
 	}
 	
 

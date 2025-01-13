@@ -67,3 +67,31 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-mode');
     }
 });
+
+
+
+// Slideshow Effect 
+let slideIndex = 0;
+const slidesContainer = document.querySelector('.slides');
+const totalSlides = slidesContainer.children.length; // Total number of slides, including duplicate
+
+function showSlides() {
+    slideIndex++;
+    slidesContainer.style.transition = "transform 1s ease-in-out";
+    slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+    // Reset position when reaching the duplicate slide
+    if (slideIndex === totalSlides - 1) {
+        setTimeout(() => {
+            slidesContainer.style.transition = "none"; // Disable animation
+            slidesContainer.style.transform = "translateX(0)"; // Reset to the first slide
+            slideIndex = 0; // Reset index
+        }, 1000); // Match the transition duration
+    }
+
+    // Automatically move to the next slide after 3 seconds
+    setTimeout(showSlides, 5000);
+}
+
+// Start the slideshow
+showSlides();
