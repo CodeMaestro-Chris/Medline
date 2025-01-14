@@ -627,7 +627,7 @@
 /* Styling for slideshow section */
 .slideshow-container {
     position: relative;
-	height: 90vh;
+	height: 100vh;
     width: 100%;
     max-width: 1300px;
 	margin: 80px auto 60px;
@@ -650,6 +650,48 @@
     width: 100%;
     flex-shrink: 0;
 }
+
+
+/* Styling for Testimonial section  */
+.testimonial-section {
+	width: 100%;
+	max-width: 1400px;
+	margin: 80px auto;
+	overflow: hidden;
+	position: relative;
+	background: linear-gradient(to bottom, rgba(240, 248, 255, 0.77),rgba(240, 248, 255, 0.28), rgba(240, 248, 255, 0.77)), url(../imgs/bachgroung_pattern1.jpg);
+	background-position: center;
+	/* border-radius: 10px; */
+	padding: 40px;
+	/* box-shadow: 6px 1px 4px 6px rgba(0, 0, 0, 0.08); */
+}
+.testimonial-slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+.testimonial {
+	min-width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+}
+
+.testimonial p {
+	font-size: 1.2rem;
+	font-style: italic;
+	color: #333;
+}
+.testimonial img{
+	max-width: 70px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+.testimonial h4 {
+	margin-top: 10px;
+	font-size: 1rem;
+	color: var(--_boldtext);
+}
+
 
 
 /*Styling for SECTION Doctors starts HERE*/

@@ -95,3 +95,31 @@ function showSlides() {
 
 // Start the slideshow
 showSlides();
+
+
+// Testimonial Slideshow 
+const slider = document.querySelector('.testimonial-slider');
+const testimonials = document.querySelectorAll('.testimonial');
+let currentIndex = 0;
+
+// Clone the first testimonial to the end for seamless transition
+const firstClone = testimonials[0].cloneNode(true);
+slider.appendChild(firstClone);
+
+function showNextTestimonial() {
+  currentIndex++;
+  slider.style.transition = 'transform 0.5s ease-in-out';
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  // Reset transition and index when reaching the cloned slide
+  if (currentIndex === testimonials.length) {
+    setTimeout(() => {
+      slider.style.transition = 'none';
+      slider.style.transform = 'translateX(0)';
+      currentIndex = 0;
+    }, 500); // Match the transition duration
+  }
+}
+
+// Automatically switch testimonials every 5 seconds
+setInterval(showNextTestimonial, 5000);
