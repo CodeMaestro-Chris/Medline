@@ -671,7 +671,6 @@
 #docs {
 	padding-top: 8vh;
 	padding-inline: 4vw;
-
 }
 
 #docs_head {
@@ -703,8 +702,18 @@
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.doc_wrapper2{
+	overflow: auto;
+	padding-block: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
 .doc_container {
+	padding: .8rem;
+}
+.doc_container2 {
 	padding: .8rem;
 }
 
@@ -720,6 +729,7 @@
 	overflow: hidden;
 	transition: all .3s ease-in-out;
 }
+
 .doc_container .doc_content::before{
 	content: "";
 	opacity: 0;
@@ -801,22 +811,32 @@
 		transform: translateY(0px);
 	}
 }
-.doc_container:nth-last-of-type(1) .doc_content {
-	background-image: url('../imgs/spec4.jpg');
-}
-
-.doc_container:nth-last-of-type(2) .doc_content {
-	background-image: url('../imgs/43a9b307-b9d2-41cd-a6e2-2f126f40939b.jfif');
-}
-
-.doc_container:nth-last-of-type(3) .doc_content {
-	background-image: url('../imgs/spec2.jpg');
-}
-
-.doc_container:nth-last-of-type(4) .doc_content {
+.doc_container:nth-of-type(1) .doc_content {
 	background-image: url('../imgs/spec3.jpg');
 }
 
+.doc_container:nth-of-type(2) .doc_content {
+	background-image: url('../imgs/3d7f8dd3-353d-4397-8858-da5ef10a4683.jfif');
+}
+
+.doc_container:nth-of-type(3) .doc_content {
+	background-image: url('../imgs/WhatsApp\ Image\ 2025-01-16\ at\ 20.13.30.jpeg');
+}
+.doc_container:nth-of-type(4) .doc_content {
+	background-image: url('../imgs/5d384ad4-4e5b-480a-8d39-80bb61f53551.jfif');
+}
+.doc_container:nth-of-type(5) .doc_content {
+    background-image: url('../imgs/spec4.jpg');
+}
+.doc_container:nth-of-type(6) .doc_content {
+	background-image: url('../imgs/dr_who.jpg');
+}
+.doc_container:nth-of-type(7) .doc_content {
+    background-image: url('../imgs/spec2.jpg');
+}
+.doc_container:nth-of-type(8) .doc_content {
+    background-image: url('../imgs/spec1.jpg');
+}
 .title {
 	display: block;
 	text-align: center;
