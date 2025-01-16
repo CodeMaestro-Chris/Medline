@@ -45,7 +45,65 @@
 	color: var(--_textcolor);
 	transition: all 0.5s ease-in-out;
 }
+/* FOR PRELOADER */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: var(--_textcolor);
+	background-color: rgb(2, 22, 39);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	z-index: 9999;
+  }
+  .preloader-items{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+  }
+  #preloader img {
+	width: 150px;
+	transition: all 3s ease-in-out;
+	animation: from-up 3s infinite ease;
+  }
+  
+  #preloader h1 {
+	font-size: 50px;
+	transition: all 3s ease-in-out;
+	animation: from-down 3s infinite ease;
+	text-align: center;
+  }
+  @keyframes from-up {
+	0%{
+		transform: translateY(-60px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+  }
+  @keyframes from-down {
+	0%{
+		transform: translateY(60px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+  }
 
+  
 /*Styling for NAVBAR starts HERE*/
 #nav_bar {
 	padding-inline:6vw;
@@ -925,7 +983,7 @@
   
   .contact-form h2 {
 	font-size: 24px;
-	color: #007bff;
+	color: var(--_boldtext);
 	margin-bottom: 10px;
   }
   
@@ -960,7 +1018,7 @@
 	padding: 12px;
 	font-size: 16px;
 	color: #fff;
-	background-color: #007bff;
+	background-color: var(--_boldtext);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -968,7 +1026,7 @@
   }
   
   .contact-form form button:hover {
-	background-color: #0056b3;
+	background-color: var(--_darkblue);
   }
   
   /* Error Message */
@@ -1039,7 +1097,7 @@
   
 /* FOOTER SECTION  */
   footer {
-	background-color: #0a0a23;
+	background-color: rgb(2, 22, 39);
 	color: #ffffff;
 	padding: 40px 20px;
 	width: 100%;

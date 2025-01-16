@@ -4,6 +4,19 @@ function show_nav(){
     document.querySelector(".bars1").classList.toggle("navturn") //Turns the bars
 }
 
+// FOR PRELOADER 
+// Preloader functionality
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    const mainContent = document.getElementById("main-content");
+  
+    // Hide preloader after 3 seconds and show main content
+    setTimeout(() => {
+      preloader.style.display = "none";
+      mainContent.style.display = "block";
+    }, 2500);
+  });
+  
 
 
 // This is for the form
@@ -127,127 +140,6 @@ setInterval(showNextTestimonial, 5000);
 
 // CONTACT US FORM VALIDATION 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevent form submission
-
-      // Get form inputs
-      const nameInput = document.getElementById("name");
-      const emailInput = document.getElementById("email");
-      const messageInput = document.getElementById("message");
-
-      // Get error messages
-      const nameError = document.getElementById("nameError");
-      const emailError = document.getElementById("emailError");
-      const messageError = document.getElementById("messageError");
-
-      let isValid = true;
-
-      // Validate Name
-      if (nameInput.value.trim() === "") {
-        nameError.style.display = "block";
-        isValid = false;
-      } else {
-        nameError.style.display = "none";
-      }
-
-      // Validate Email
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
-      if (!emailPattern.test(emailInput.value.trim())) {
-        emailError.style.display = "block";
-        isValid = false;
-      } else {
-        emailError.style.display = "none";
-      }
-
-      // Validate Message
-      if (messageInput.value.trim() === "") {
-        messageError.style.display = "block";
-        isValid = false;
-      } else {
-        messageError.style.display = "none";
-      }
-
-      // If all inputs are valid, submit the form
-      if (isValid) {
-        alert("Form submitted successfully!");
-        this.reset(); // Clear form fields
-      }
-    });
-
-    // CONTACT US FORM VALIDATION 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent form submission
-
-  // Get form inputs
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const messageInput = document.getElementById("message");
-
-  // Get error messages
-  const nameError = document.getElementById("nameError");
-  const emailError = document.getElementById("emailError");
-  const messageError = document.getElementById("messageError");
-
-  let isValid = true;
-
-  // Validate Name
-  if (nameInput.value.trim() === "") {
-    nameError.style.display = "block";
-    isValid = false;
-  } else {
-    nameError.style.display = "none";
-  }
-
-  // Validate Email
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
-  if (!emailPattern.test(emailInput.value.trim())) {
-    emailError.style.display = "block";
-    isValid = false;
-  } else {
-    emailError.style.display = "none";
-  }
-
-  // Validate Message
-  if (messageInput.value.trim() === "") {
-    messageError.style.display = "block";
-    isValid = false;
-  } else {
-    messageError.style.display = "none";
-  }
-
-  // If all inputs are valid, submit the form
-  if (isValid) {
-    alert("Form submitted successfully!");
-    this.reset(); // Clear form fields
-  }
-});
-
-// Add event listeners to remove error messages on valid input
-document.getElementById("name").addEventListener("input", function () {
-  const nameError = document.getElementById("nameError");
-  if (this.value.trim() !== "") {
-    nameError.style.display = "none";
-  }
-});
-
-document.getElementById("email").addEventListener("input", function () {
-  const emailError = document.getElementById("emailError");
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (emailPattern.test(this.value.trim())) {
-    emailError.style.display = "none";
-  }
-});
-
-document.getElementById("message").addEventListener("input", function () {
-  const messageError = document.getElementById("messageError");
-  if (this.value.trim() !== "") {
-    messageError.style.display = "none";
-  }
-});
-
-
-
-// CONTACT US FORM VALIDATION 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent form submission
   
     // Get form inputs
@@ -289,7 +181,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   
     // If all inputs are valid, submit the form
     if (isValid) {
-      alert("Form submitted successfully!");
+      alert("Your message has been sent successfully!");
       this.reset(); // Clear form fields
     }
   });
