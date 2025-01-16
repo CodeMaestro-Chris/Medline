@@ -624,33 +624,6 @@
 /*Styling for SECTION Health challenges endss HERE*/
 
 
-/* Styling for slideshow section */
-.slideshow-container {
-    position: relative;
-	height: 100vh;
-    width: 100%;
-    max-width: 1300px;
-	margin: 80px auto 60px;
-    overflow: hidden;
-}
-.slideshow-container h2{
-	margin-bottom: 50px;
-	font-size: 2.6rem;
-	font-weight: 800;
-	text-align: center;
-	color: var(--_boldtext);
-}
-.slides {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    width: 100%; /* 100% x number of slides */
-}
-
-.slides img {
-    width: 100%;
-    flex-shrink: 0;
-}
-
 
 /* Styling for Testimonial section  */
 .testimonial-section {
@@ -858,11 +831,48 @@
 	border-top-left-radius: 1rem;*/
 }
 
+
+
+/* Styling for slideshow section */
+.slideshow-container {
+    position: relative;
+	height: 100vh;
+    width: 100%;
+    max-width: 1300px;
+	margin: 80px auto 80px;
+    overflow: hidden;
+}
+.slideshow-container h2{
+	margin-bottom: 50px;
+	font-size: 2.6rem;
+	font-weight: 800;
+	text-align: center;
+	color: var(--_boldtext);
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* 100% x number of slides */
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
 /*Styling for SECTION Doctors ends HERE*/
   .contact-section {
+	margin: 70px auto 50px;
 	width: 100%;
+	height: 85vh;
   }
-  
+  .contact-section h1{
+	color: var(--_boldtext);
+	text-align: center;
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+  }
   .contact-container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -870,12 +880,12 @@
 	border-radius: 10px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
   }
   
   /* Contact Illustration */
   .contact-illustration {
-	flex: 1;
+	/* flex: 1; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -954,9 +964,12 @@
 	.contact-container {
 	  flex-direction: column;
 	}
+	.contact-section{
+		margin-top: 10px !important;
+	}
   
 	.contact-illustration img {
-	  max-width: 100%;
+	  max-width: 200px;
 	}
   
 	.contact-form {
@@ -965,6 +978,10 @@
   }
   
   @media (max-width: 768px) {
+	.contact-section{
+		max-width: 1000px !important;
+		width: 100% !important;
+	}
 	.contact-form h2 {
 	  font-size: 20px;
 	}
@@ -972,14 +989,20 @@
 	.contact-form p {
 	  font-size: 14px;
 	}
-  
+	.contact-illustration img {
+		width: 300px !important;
+	  }
 	.contact-form form input,
 	.contact-form form textarea {
 	  font-size: 14px;
 	}
   }
   
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
+	.contact-section{
+		/* max-width: 1200px !important; */
+		width: 100% !important;
+	}
 	.contact-form h2 {
 	  font-size: 18px;
 	}
@@ -1001,9 +1024,10 @@
 	padding: 40px 20px;
 	width: 100%;
 	max-width: 1500px;
+	margin: 70px auto 0;
   }
-  .footer img{
-	width: 10%;
+  .footer .footer-logo img{
+	width: 70%;
   }
   .footer-container {
 	display: flex;
@@ -1012,10 +1036,11 @@
 	gap: 20px;
 	max-width: 1200px;
 	margin: 0 auto;
+	align-items: center;
   }
   
   .footer-container > div {
-	flex: 1 1 calc(33.333% - 20px);
+	flex: 1 1 calc(25% - 20px);
 	min-width: 280px;
   }
   
@@ -1061,9 +1086,10 @@
   .footer-bottom {
 	margin-top: 20px;
 	border-top: 1px solid #2db8ff;
-	padding-top: 10px;
+	padding-top: 20px;
 	font-size: 14px;
 	color: #cccccc;
+	text-align: center;
   }
   
   /* Responsive Styles */
@@ -1072,11 +1098,26 @@
 	  flex-direction: column;
 	  text-align: center;
 	}
+	.footer-logo img{
+        max-width: 300px !important;
+		width: 100%;
+    }
   
 	.footer-container > div {
-	  flex: 1 1 100%;
+	  flex: 1 1 50%;
 	}
-  }
+	footer{
+		margin-top: 2rem !important;
+	}
+	.footer img{
+		max-width: 200px;
+	}
+  }  
+@media screen and (max-width: 1024px){
+	.contact-section img{
+		max-width: 500px;
+	}
+}
   
 
 
