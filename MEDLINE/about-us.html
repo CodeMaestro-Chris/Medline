@@ -7,43 +7,51 @@
 		<title>Medline</title>
 		<link rel="shortcut icon" href="imgs/MedLine_logo.png" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/styles.css">
 
 	</head>
-	<body>
+	<body id="body">
 
-		<header >
-			<nav id="nav_bar" class="col-12">
-				<div id="logo_name" class="col-5">
-					<div id="logo_img">
-						<img src="imgs/MedLine_logo_min.png" id="logo">
-					</div>
-
-					<a href="index.html" id="site_name" class="glow">MedLine</a>
+		<nav id="nav_bar" class="col-12">
+			<div id="logo_name" class="col-5">
+				<div id="logo_img">
+					<img src="imgs/MedLine_logo.png" id="logo">
 				</div>
 
-				<ul id="nav_list" class="col-7">
+				<a href="index.html" id="site_name" class="glow">MedLine</a>
+			</div>
+
+			<ul id="nav_list" class="col-7">
+				<li><a href="index.html" class="nav_links">Home</a></li>
+				<li><a href="about-us.html" class="nav_links">About Us</a></li>
+				<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
+				<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
+			</ul>
+
+			<div id="bars" onclick="show_nav()">
+				<div class="bars1">
+					<div class="top"></div>
+					<div class="middle"></div>
+					<div class="bottom"></div>
+				</div>					
+				<div class="nav_list2 col-md-12" id="hidden_nav">
 					<li><a href="index.html" class="nav_links">Home</a></li>
 					<li><a href="about-us.html" class="nav_links">About Us</a></li>
 					<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
 					<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
-				</ul>
-
-				<div id="bars" onclick="show_nav()">
-					<div class="bars1">
-						<div class="top"></div>
-						<div class="middle"></div>
-						<div class="bottom"></div>
-					</div>
-					
-					<div class="nav_list2 col-md-12" id="hidden_nav">
-						<li><a href="index.html" class="nav_links">Home</a></li>
-						<li><a href="about-us.html" class="nav_links">About Us</a></li>
-						<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
-						<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
-					</div>	
-				</div>
-			</nav>
+				</div>	
+			</div>
+		</nav>
+		<header class="about-hero">
+			<h1>About Us</h1>
 		</header>
+		<section class="partners">
+			<img class="teocare" src="./imgs/fjjfkkd2.jpg" alt="">
+			<img src="./imgs/BMS-Bristol-Myers-Squibb-Emblem.png" alt="">
+			<img class="unicef" src="./imgs/unicef.png" alt="">
+			<img class="nafdac" src="./imgs/nafdac2.png" alt="">
+			<img class="iphamar" src="./imgs/iphamar.png" alt="">
+		</section>
 
 	<section class="about_doc">
 
@@ -165,41 +173,53 @@
 
 		</section>
 
-		<footer id="footer">
-			<div id="footer_sub">	
-				<div id="sub" class="col-6 col-sd-8 col-esd-12 ">
-					<h4 id="sub_">Subscribe To Our Newsletter</h4>
+		<button class="dark fa fa-moon-o" onclick="toggleDarkMode()"></button>
+		<a href="#"><button class="to-the-top fa fa-arrow-up"></button></a>
 
 
-					<input type="email" id="email" class="col-6 col-ld-9 col-esd-11 " placeholder="Enter Email Address">
-					<button type="submit" id="btn_sub" onclick="send()" class="col-3 col-ld-4 col-sd-5 col-esd-6 ">Subscribe</button>
-
-					<!-- <span id="thanks">Thank you for subscribing</span> -->
-				</div>
-
-				<div id="socials">
-					<h4 id="follow">Follow and Engage with us:</h4>
-
-					<div id="so">	
-						<ul>
-							<li><a href="#" class="fa fa-instagram social_icon"></a></li>
-							<li><a href="#" class="fa fa-youtube-play social_icon"></a></li>
-							<li><a href="#" class="fa fa-linkedin-square social_icon"></a></li>
-							<li><a href="#" class="fa fa-twitter social_icon"></a></li>
-							<li><a href="#" class="fa fa-facebook social_icon"></a></li>
-						</ul>
-					</div>
-				</div>
+		<footer class="footer">
+			<div class="footer-container">
+			  <!-- About Section -->
+			   <div class="footer-logo">
+				<img src="./imgs/MedLine_logo.png" alt="">
+			   </div>
+			  <div class="footer-about">
+				<h3> About MedLine</h3>
+				<p>We are committed to providing excellent healthcare services. Your health is our priority.</p>
+			  </div>
+		
+			  <!-- Quick Links -->
+			  <div class="footer-links">
+				<h3>Quick Links</h3>
+				<ul>
+				  <li><a href="#services">Services</a></li>
+				  <li><a href="#about">About Us</a></li>
+				  <li><a href="#contact">Contact</a></li>
+				  <li><a href="#faq">FAQ</a></li>
+				</ul>
+			  </div>
+		
+			  <!-- Contact Info -->
+			  <div class="footer-contact">
+				<h3>Contact Us</h3>
+				<ul>
+				  <li><i class="fa fa-phone"></i> +123 456 789</li>
+				  <li><i class="fa fa-envelope"></i> contact@medline.com</li>
+				  <li><i class="fa fa-location-arrow"></i> 123 Healthcare Street, City</li>
+				</ul>
+			  </div>
 			</div>
-
-			<hr>
-			<div id="copyright">
-				<span id="copy">© 2024-MedLine.</span>
-				<span id="rights">All rights reserved</span>
+		
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+			  <p>&copy; 2025 MedLine by CodeMaestro Chris. All Rights Reserved.</p>
 			</div>
-		</footer>
+		  </footer>
 
-	</body>
+
+
 
 	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
 </html>

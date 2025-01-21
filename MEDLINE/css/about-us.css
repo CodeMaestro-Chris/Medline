@@ -68,93 +68,69 @@ h2{
 	border: 2px solid #3b9dde;
 	border-radius: 2rem;
 	padding: .8rem 1.4rem;
-
 	font-weight: 400;
 	font-size: 1rem;
 }
-
 #head_spec {
 	padding-top: 1.5rem;
 	text-align: center;
 	font-size: 2rem;
 	color: var(--_boldtext);
 }
-
 .doc_wrapper {
 	overflow: auto;
 	padding-block: 2rem;
-
-
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
 	flex-wrap: wrap;
 }
-
 .doc_container {
 	padding: .8rem;	
 }
-
 .doc_content {
 	box-shadow: 3px 3px 10px var(--_boldtext);
 	overflow: hidden;
 }
-
 .content{
 	display: flex;
 	box-shadow: 3px 3px 10px var(--_boldtext);
-
-	/* height: 45vh; */
 }
-
 .content img{
 	object-position: top center;
 	object-fit: cover;
-
 	height: 22rem;
 }
-
 .title {
 	display: block;
 	text-align: center;
 	font-weight: 700;
 	font-size: 1.1rem;
 	padding-block: 1rem;
-
 	background-color: aliceblue;
-
 	box-shadow: 3px 3px 10px #015C92;
-
-
 	border-bottom-right-radius: 1rem;
 	border-bottom-left-radius: 1rem;
 }
-
 .dr-txt{
 	text-align: left;
 	padding: 1rem;
 }
-
 .spec-txt{
 	display: block;
 	padding-bottom: 20px;
 }
-
-
 #quote {
 	display: block;
 	color: var(--_boldtext);
 	font-size: 1rem;
-
 	font-weight: 800;
 	padding-bottom: 1.5rem;
 }
-
 .mission_statement{
 	color: #015C92;
 	font-size: 1rem;
 }
-
 /*Styling for SECTION Doctors ends HERE*/
 
 
