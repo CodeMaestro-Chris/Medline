@@ -106,7 +106,7 @@
   
 /*Styling for NAVBAR starts HERE*/
 #nav_bar {
-	padding-inline:6vw;
+	padding-inline:4vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1170,8 +1170,8 @@
 
 
   /* ====== ABOUT US PAGE ====== */
-  .about-hero{
-	height: 60vh;
+.about-hero{
+	height: 65vh;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/about_banner.jpg);
 	background-position: center;
 	background-size: cover;
@@ -1179,11 +1179,49 @@
 	justify-content: center;
 	align-items: center;
 	color: var(--_textcolor);
-  }
-  .about-hero h1{
+}
+.about-hero h1{
 	font-size: 3rem;
-  }
-
+}
+.about-section{
+	padding: .5rem 4.5rem;
+	margin: 60px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about-section h4{
+	color: var(--_boldtext);
+	margin-bottom: 10px;
+}
+.about-text{
+	padding-left: 30px;
+	border-left: 2px solid var(--_boldtext);
+	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+#read-more{
+	display: inline-block;
+	background-color: var(--_boldtext);
+	color: var(--_textcolor);
+	text-decoration: none;
+	padding: .7rem 1.1rem;
+	border-radius: .4rem;
+	font-size: 16px;
+	transition: all .3s ease-in-out;
+	margin-top: 10px;
+}
+#read-more:hover{
+	background-color: #165783;
+}
+.sponsors-title{
+	margin-top: 100px;
+	margin-left: 70px;
+	color: var(--_boldtext);
+}
 
 
 
@@ -1194,6 +1232,23 @@
   @media (max-width: 768px) {
 	#nav_list{
 		display: none;
+	}
+	.mission{
+		padding: 5rem 2rem;
+		text-align: justify;
+	}
+	.about-section{
+		padding: 1rem;
+		display: block !important;
+	}
+	.about-text{
+		height: auto;
+		margin-top: 20px;
+		padding-left: 0;
+		border-left: 0;
+	}
+	.sponsors-title{
+		margin-left: 10px;
 	}
 	.footer-container {
 	  flex-direction: column;
@@ -1249,7 +1304,9 @@
 	#welcome {
 		font-size: 1.4rem;
 	}
-
+	#nav_list{
+		display: none;
+	}
 	#get-involved {
 		font-size: 1.1rem;
 	}
@@ -1266,6 +1323,9 @@
 
 	#brief_about {
 		font-size: .9rem;
+	}
+	.about-hero{
+		height: 40vh;
 	}
 }
 
