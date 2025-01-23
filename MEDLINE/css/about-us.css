@@ -91,6 +91,7 @@ h2{
 .doc_content {
 	box-shadow: 3px 3px 10px var(--_boldtext);
 	overflow: hidden;
+	background-color: var(--_bodybc);
 }
 .content{
 	display: flex;

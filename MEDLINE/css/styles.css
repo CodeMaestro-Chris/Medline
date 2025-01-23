@@ -899,12 +899,8 @@
 	font-weight: 700;
 	font-size: 1.1rem;
 	padding-block: 1rem;
-
 	background-color: var(--_textcolor);
 	color: var(--_boldtext);
-
-	/*border-top-right-radius: 1rem;
-	border-top-left-radius: 1rem;*/
 }
 
 
@@ -938,7 +934,7 @@
 
 /*Styling for SECTION Doctors ends HERE*/
   .contact-section {
-	margin: 70px auto 50px;
+	margin: 70px auto 120px;
 	width: 100%;
 	height: 85vh;
   }
@@ -1100,7 +1096,7 @@
 	padding: 40px 20px;
 	width: 100%;
 	max-width: 1500px;
-	margin: 70px auto 0;
+	margin: 0 auto;
   }
   .footer .footer-logo img{
 	width: 70%;
@@ -1230,10 +1226,12 @@
 	color: var(--_boldtext);
 }
 .good-living{
-	margin: 80px auto;
+	margin: 100px auto 80px;
 }
 .good-living h1{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	padding-left: 20px;
+	border-left: 4px solid var(--_boldtext);
 }
 .live{
 	display: flex;
@@ -1242,12 +1240,107 @@
 }
 .live-img img{
 	width: 100%;
+	border-radius: 100px 0px 100px 0px;
 }
 .live-text div{
 	margin-bottom: 30px;
+	font-size: 18px;
 }
 .good-living .live .live-text h4{
 	margin-bottom: 8px;
+	padding-left: 10px;
+	border-left: 2px solid var(--_boldtext);
+}
+.docs-caption{
+	padding-left: 20px;
+	border-left: 4px solid var(--_boldtext);
+	font-size: 2rem;
+}
+.doc-card{
+	box-shadow: 1px 1px 10px rgba(6, 52, 82, 0.24);
+	padding-top: 40vh;	
+	position: relative;
+	background-position: top center;
+	border-radius: .5rem;
+	display: inline-block;
+	overflow: hidden;
+	transition: all .3s ease-in-out;
+}
+.doc-card:hover{
+	transform: translateY(-20px);
+}
+.doc_container:nth-of-type(1) .doc-card {
+	background-image: url('../imgs/spec3.jpg');
+	background-size: 200%;
+}
+.doc_container:nth-of-type(2) .doc-card  {
+	background-image: url('../imgs/3d7f8dd3-353d-4397-8858-da5ef10a4683.jfif');
+	background-size: 100%;
+}
+.doc_container:nth-of-type(3) .doc-card {
+	background-image: url('../imgs/WhatsApp\ Image\ 2025-01-16\ at\ 20.13.30.jpeg');
+	background-size: 100%;
+}
+.doc_container:nth-of-type(4) .doc-card {
+	background-image: url('../imgs/5d384ad4-4e5b-480a-8d39-80bb61f53551.jfif');
+	background-size: 100%;
+}
+.doc-card p{
+	padding: 10px;	
+	background-color: var(--_bodybc);
+	color: var(--_darkmode);
+	text-align: justify;
+}
+.doc-card span{
+	color: var(--_boldtext);
+}
+.doc_container .doc-card a{
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+.doc_container .doc-card .fa{
+	background-color: var(--_textcolor);
+	color: var(--_darkerblue);
+	border-radius: 100%;
+	padding:.5rem;
+	transition: all 1s ease-in-out;
+	font-size: 14px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.doc_container .doc-card .about-doc .fa-facebook{
+	background-color: var(--_textcolor);
+	color: var(--_darkerblue);
+	border-radius: 100%;
+	padding:.5rem .7em !important;
+}
+.doc_container .doc-card .about-doc .fa-phone{
+	background-color: var(--_textcolor);
+	color: var(--_darkerblue);
+	border-radius: 100%;
+	padding:.5rem .6rem;
+}
+.about-doc{
+	text-align: center;
+	background-color: var(--_darkerblue);
+	padding: 10px;
+}
+.doc-name{
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.1rem;
+	padding-block: 1rem;
+	background-color: var(--_textcolor);
+	color: var(--_darkerblue) !important;
+}
+.summary{
+	margin-top: 80px;
+	background-color: rgb(210, 238, 247) !important;
+	padding: 60px 0;
+}
+.summary div{
+	margin: 0 auto;
 }
 
 
@@ -1275,6 +1368,12 @@
 	.sponsors-title{
 		margin-left: 10px;
 	}
+	.live{
+		display: block;
+	}
+	.live-img{
+		margin-bottom: 40px;
+	}
 	.footer-container {
 	  flex-direction: column;
 	  text-align: center;
@@ -1297,6 +1396,9 @@
 @media screen and (max-width: 1024px){
 	.contact-section img{
 		max-width: 500px;
+	}
+	.live{
+		display: block;
 	}
 }
   
@@ -1328,6 +1430,13 @@
 
 	#welcome {
 		font-size: 1.4rem;
+	}
+	.live{
+		display: block;
+	}
+	.live img{
+		width: 90%;
+		margin-bottom: 30px !important;
 	}
 	#nav_list{
 		display: none;
@@ -1416,6 +1525,9 @@
 
 /*Styling for SECTION Doctors ends HERE*/
 #bars{
+	display: block;
+}
+.live{
 	display: block;
 }
 
