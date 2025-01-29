@@ -6,77 +6,52 @@
 	<title>MedLine</title>
 
 	<link rel="shortcut icon" href="imgs/MedLine_logo.png" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="css/head_foot.css">
-	<link rel="stylesheet" type="text/css" href="css/ContactUs_style.css">
-	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/ContactUs_style.css"> -->
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 </head>
-<body>
+<body id="body">
 
 
-	<header >
-		<nav id="nav_bar" class="col-12">
-			<div id="logo_name" class="col-5">
-				<div id="logo_img">
-					<img src="imgs/MedLine_logo_min.png" id="logo">
-				</div>
-
-				<a href="index.html" id="site_name" class="glow">MedLine</a>
+	
+	<nav id="nav_bar" class="col-12">
+		<div id="logo_name" class="col-5">
+			<div id="logo_img">
+				<img src="imgs/MedLine_logo.png" id="logo">
 			</div>
 
-			<ul id="nav_list" class="col-7">
+			<a href="index.html" id="site_name" class="glow">MedLine</a>
+		</div>
+
+		<ul id="nav_list" class="col-7">
+			<li><a href="index.html" class="nav_links">Home</a></li>
+			<li><a href="about-us.html" class="nav_links">About Us</a></li>
+			<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
+			<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
+		</ul>
+
+		<div id="bars" onclick="show_nav()">
+			<div class="bars1">
+				<div class="top"></div>
+				<div class="middle"></div>
+				<div class="bottom"></div>
+			</div>					
+			<div class="nav_list2 col-md-12" id="hidden_nav">
 				<li><a href="index.html" class="nav_links">Home</a></li>
 				<li><a href="about-us.html" class="nav_links">About Us</a></li>
 				<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
 				<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
-			</ul>
+			</div>	
+		</div>
+	</nav>
 
-			<div id="bars" onclick="show_nav()">
-				<div class="bars1">
-					<div class="top"></div>
-					<div class="middle"></div>
-					<div class="bottom"></div>
-				</div>
-				
-				<div class="nav_list2 col-md-12" id="hidden_nav">
-					<li><a href="index.html" class="nav_links">Home</a></li>
-					<li><a href="about-us.html" class="nav_links">About Us</a></li>
-					<li><a href="healthCond.html" class="nav_links">Health Challenges</a></li>
-					<li><a href="ContactUs.html" class="nav_links">Contact Us</a></li>
-				</div>	
-			</div>
-		</nav>
+	<header class="contact-hero">
+		<h1>Contact Us</h1>
 	</header>
-
-
 	<!-- Contact Starts HERE -->
-	<div class="contact_container">
-		<h2 class="contact_us">Contact Us</h2>
-	
-		<div class="container col-12 col-6"> 
-			<div class="contain-right">
-				<form>
-					<div class="flex-items col-12">
-						<div class="inputs col-6 col-esd-12">
-							<input type="name" id="name" placeholder="Your Name" class="col-12">
-							<input type="email" id="email_" placeholder="Your Email" class="col-12">
-							<input type="phone number" id="number" placeholder="Your Phone number" class="col-12">
-						</div>
-				
-						<textarea class="col-6 col-esd-12" placeholder="Your message..." id="text"></textarea>
-						<br>
-	
-					</div>
-					
-					<div class="btn-div">
-						<button class="send col-1 col-ld-2 col-esd-3" type="reset" onclick="send()">Send</button>
-					</div>
-				</form>
-				
-			</div> 
-			 
 			<div class="contain-left">
-	
-				<h2>Get in Touch</h2>
+				<br>
+				<h2>Find Us Now</h2>
 				
 				<div class="contacts">
 					<div class="cont1 col-6 col-esd-12">
@@ -96,7 +71,10 @@
 						<span>			
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 							medline@gmail.com
-						</span>			
+						</span>
+						<div class="col-12 col-esd-12 col-md-12">
+							<img src="./imgs/earth4.png" alt="">
+						</div>
 					</div>
 	
 					<iframe class="col-6 col-esd-12" id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.9138169062292!2d7.000159340349162!3d4.799627940327539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce9948d6eb67%3A0x6d756048b6223638!2s1%20Kaduna%20Street!5e0!3m2!1sen!2sng!4v1731450024082!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -105,43 +83,82 @@
 			</div>
 		</div>
 	</div>
-
-	<footer id="footer">
-		<div id="footer_sub">	
-			<div id="sub" class="col-6 col-sd-8 col-esd-12">
-				<h4 id="sub_">Subscribe To Our Newsletter</h4>
-
-				<input type="email" id="email" class="col-6 col-ld-9 col-esd-11 " placeholder="Enter Email Address">
-				
-				<button type="submit" id="btn_sub" onclick="send()" class="col-3 col-ld-4 col-sd-5 col-esd-6 ">Subscribe</button>
-				<!-- <span id="thanks">Thank you for subscribing</span> -->
+	<div class="contact_container">
+		<br>
+		<section class="contact-section">
+			<div class="contact-container">
+			  <div class="contact-illustration">
+				<img src="../MEDLINE/imgs/undraw_message-sent_785q.svg" alt="Contact Illustration">
+			  </div>
+			  <div class="contact-form">
+				<h2>Get In Touch</h2>
+				<p>We are here for you. How can we help?</p> <form id="contactForm">
+					<div class="form-group">
+					  <input type="text" id="fullname" name="name" placeholder="Enter your name">
+					  <small class="error-message" id="nameError">Name is required</small>
+					</div>
+					<div class="form-group">
+					  <input type="email" id="email" name="email" placeholder="Enter your email address">
+					  <small class="error-message" id="emailError">Valid email is required</small>
+					</div>
+					<div class="form-group">
+					  <textarea id="message" name="message" placeholder="Enter your message" rows="4"></textarea>
+					  <small class="error-message" id="messageError">Message cannot be empty</small>
+					</div>
+					<button type="submit">Submit</button>
+				  </form>
+			  </div>
 			</div>
+		  </section>
 
-			<div id="socials">
-				<h4 id="follow">Follow and Engage with us:</h4>
+	<button class="dark fa fa-moon-o" onclick="toggleDarkMode()"></button>
+	<a href="#"><button class="to-the-top fa fa-arrow-up"></button></a>
 
-				<div id="so">	
-					<ul>
-						<li><a href="#" class="fa fa-instagram social_icon"></a></li>
-						<li><a href="#" class="fa fa-youtube-play social_icon"></a></li>
-						<li><a href="#" class="fa fa-linkedin-square social_icon"></a></li>
-						<li><a href="#" class="fa fa-twitter social_icon"></a></li>
-						<li><a href="#" class="fa fa-facebook social_icon"></a></li>
-					</ul>
-				</div>
-			</div>
+
+	<footer class="footer">
+		<div class="footer-container">
+		  <!-- About Section -->
+		   <div class="footer-logo">
+			<img src="./imgs/MedLine_logo.png" alt="">
+		   </div>
+		  <div class="footer-about">
+			<h3> About MedLine</h3>
+			<p>We are committed to providing excellent healthcare services. Your health is our priority.</p>
+		  </div>
+	
+		  <!-- Quick Links -->
+		  <div class="footer-links">
+			<h3>Quick Links</h3>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about-us.html">About Us</a></li>
+				<li><a href="./ContactUs.html">Contact</a></li>
+				<li><a href="./healthCond.html">FAQ</a></li>
+			</ul>
+		  </div>
+	
+		  <!-- Contact Info -->
+		  <div class="footer-contact">
+			<h3>Contact Us</h3>
+			<ul>
+			  <li><i class="fa fa-phone"></i> +123 456 789</li>
+			  <li><i class="fa fa-envelope"></i> contact@medline.com</li>
+			  <li><i class="fa fa-location-arrow"></i> 123 Healthcare Street, City</li>
+			</ul>
+		  </div>
 		</div>
-
-		<hr>
-		<div id="copyright">
-			<span id="copy">© 2024-MedLine.</span>
-			<span id="rights">All rights reserved</span>
+	
+		<!-- Footer Bottom -->
+		<div class="footer-bottom">
+		  <p>&copy; 2025 MedLine by CodeMaestro Chris. All Rights Reserved.</p>
 		</div>
-	</footer>
+	  </footer>
 
-	<!-- Probably a div would hold the iframe(Read it up!) -->
+
+
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/ContactUs_script.js"></script>
 </body>
 
-<script src="js/ContactUs_script.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 </html>

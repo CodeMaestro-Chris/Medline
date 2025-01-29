@@ -1,3 +1,26 @@
+
+const headers = document.querySelectorAll('.accordion-header');
+
+headers.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+
+        // Toggle current content
+        if (content.classList.contains('drop')) {
+            content.classList.remove('drop');
+            header.classList.remove('active');
+        } else {
+            // Close all other contents
+            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('drop'));
+            document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+
+            // Open current content
+            content.classList.add('drop');
+            header.classList.add('active');
+        }
+    });
+});
+
 //First Dropdown
 
 
