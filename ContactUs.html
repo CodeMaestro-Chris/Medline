@@ -31,9 +31,7 @@
 
 		<div id="bars" onclick="show_nav()">
 			<div class="bars1">
-				<div class="top"></div>
-				<div class="middle"></div>
-				<div class="bottom"></div>
+				<span class="fa fa-bars"></span>
 			</div>					
 			<div class="nav_list2 col-md-12" id="hidden_nav">
 				<li><a href="index.html" class="nav_links">Home</a></li>
@@ -48,38 +46,36 @@
 		<h1>Contact Us</h1>
 	</header>
 	<!-- Contact Starts HERE -->
-			<div class="contain-left">
-				<br>
-				<h2>Find Us Now</h2>
+	<div class="contain-left">
+		<br>
+		<h2>Find Us Now</h2>
+		
+		<div class="contacts">
+			<div class="cont1 col-6 col-esd-12">
+				<span>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Head Office: 1, Kaduna Streetx
+					D-line, Port-harcourt
+				</span>
+
 				
-				<div class="contacts">
-					<div class="cont1 col-6 col-esd-12">
-						<span>
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							Head Office: 1, Kaduna Streetx
-							D-line, Port-harcourt
-						</span>
-	
-						
-						<span>
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							Phone Number: +234 1234567899
-						</span>
-					
-	
-						<span>			
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-							medline@gmail.com
-						</span>
-						<div class="col-12 col-esd-12 col-md-12">
-							<img src="./imgs/earth4.png" alt="">
-						</div>
-					</div>
-	
-					<iframe class="col-6 col-esd-12" id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.9138169062292!2d7.000159340349162!3d4.799627940327539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce9948d6eb67%3A0x6d756048b6223638!2s1%20Kaduna%20Street!5e0!3m2!1sen!2sng!4v1731450024082!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					
+				<span>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					Phone Number: +234 1234567899
+				</span>
+			
+
+				<span>			
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					medline@gmail.com
+				</span>
+				<div class="col-12 col-esd-12 col-md-12">
+					<img src="./imgs/earth4.png" alt="">
 				</div>
 			</div>
+
+			<iframe class="col-6 col-esd-12" id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.9138169062292!2d7.000159340349162!3d4.799627940327539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce9948d6eb67%3A0x6d756048b6223638!2s1%20Kaduna%20Street!5e0!3m2!1sen!2sng!4v1731450024082!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
 		</div>
 	</div>
 	<div class="contact_container">
@@ -91,7 +87,8 @@
 			  </div>
 			  <div class="contact-form">
 				<h2>Get In Touch</h2>
-				<p>We are here for you. How can we help?</p> <form id="contactForm">
+				<p>We are here for you. How can we help?</p> 
+				<form id="contactForm">
 					<div class="form-group">
 					  <input type="text" id="fullname" name="name" placeholder="Enter your name">
 					  <small class="error-message" id="nameError">Name is required</small>
@@ -105,10 +102,11 @@
 					  <small class="error-message" id="messageError">Message cannot be empty</small>
 					</div>
 					<button type="submit">Submit</button>
-				  </form>
+				</form>
 			  </div>
 			</div>
 		  </section>
+	</div>		  
 
 	<button class="dark fa fa-moon-o" onclick="toggleDarkMode()"></button>
 	<a href="#"><button class="to-the-top fa fa-arrow-up"></button></a>

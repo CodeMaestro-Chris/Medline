@@ -1,0 +1,102 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url('../DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+:root {
+	--_darkblue: rgba(19, 79, 119, 0.7);
+	--_lightblue: rgb(59, 157, 222);
+	--_textcolor: rgb(240, 248, 255);
+	--_textcolordark: rgb(82, 81, 81);
+	--_bodybc: rgb(240, 248, 255);
+	--_boldtext: rgb(22, 87, 131);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DMSans";
+}
+
+body{
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.col-ld-1 {width: 8.33%;}
+	.col-ld-2 {width: 16.66%;}
+	.col-ld-3 {width: 25%;}
+	.col-ld-4 {width: 33.33%;}
+	.col-ld-5 {width: 41.66%;}
+	.col-ld-6 {width: 50%;}
+	.col-ld-7 {width: 58.33%;}
+	.col-ld-8 {width: 66.66%;}
+	.col-ld-9 {width: 75%;}
+	.col-ld-10 {width: 83.33%;}
+	.col-ld-11 {width: 91.66%;}
+	.col-ld-12 {width: 100%;}
+
+    
+
+@media only screen and (max-width: 768px){
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.col-esd-1 {width: 8.33%;}
+	.col-esd-2 {width: 16.66%;}
+	.col-esd-3 {width: 25%;}
+	.col-esd-4 {width: 33.33%;}
+	.col-esd-5 {width: 41.66%;}
+	.col-esd-6 {width: 50%;}
+	.col-esd-7 {width: 58.33%;}
+	.col-esd-8 {width: 66.66%;}
+	.col-esd-9 {width: 75%;}
+	.col-esd-10 {width: 83.33%;}
+	.col-esd-11 {width: 91.66%;}
+	.col-esd-12 {width: 100%;}
+    
+    
+}
+}
