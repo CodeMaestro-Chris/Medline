@@ -34,8 +34,8 @@ function send() {
     }
 }
 
-//Function for activating and deactivating darkmode
 
+//Function for activating and deactivating darkmode
 //The rolling effect on the darkmode button
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeButton = document.querySelector('.dark');
@@ -103,7 +103,7 @@ function showSlides() {
     }
 
     // Automatically move to the next slide after 3 seconds
-    setTimeout(showSlides, 5000);
+    setTimeout(showSlides, 3000);
 }
 
 // Start the slideshow

@@ -215,7 +215,6 @@
 	padding: 20px;
 	animation: slide_in_nav .6s ease-in-out;
 	/* padding-bottom: 20px; */
-	height: 30vh;
 }
 .nav_list2 li{
 	text-align: left;
@@ -241,7 +240,7 @@
 #banner {
 	padding: 30vh 7vw 28vh;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../imgs/group-african-medical-students-posed-outdoor-against-university-door.jpg');
-	background-position: top center;
+	background-position: top center !important;
 	background-size: cover;
 	z-index: 4;
 }
@@ -1562,13 +1561,18 @@ i.fa.fa-map-marker, i.fa.fa-phone, i.fa.fa-envelope{
 	}
 	.contact_container{
 		margin-bottom: 1rem !important;
+	}	
+	.slideshow-container{
+		height: 90vh !important;
 	}
-	
+	.slideshow-container .slides{
+		height: 80vh;
+	}
     .health_challng {
         padding-inline: 2vw;
     }
     .health-challenge-hero{
-        font-size: 1rem !important; color: red;
+        font-size: 1rem !important;
     }
     .health_challng h1{
         font-size: 1.8rem;
@@ -1582,6 +1586,15 @@ i.fa.fa-map-marker, i.fa.fa-phone, i.fa.fa-envelope{
     #faq {
         font-size: 1.5rem;
     }
+	.cont1 {
+		padding-left: 20px;
+	}
+	.health-challenge-hero{
+		padding: 0 10px;
+	}
+	.health-challenge-hero h1{
+		font-size: 2rem !important;
+	}
 }  
 
 
@@ -1986,7 +1999,7 @@ i.fa.fa-map-marker, i.fa.fa-phone, i.fa.fa-envelope{
 		padding: 20px;
 	}
 	.health-challenge-hero{
-		font-size: 1rem !important; color: red !important;
+		font-size: 1rem !important;
 	}
 	.health_challng h1{
 		font-size: 2rem;
@@ -1997,12 +2010,18 @@ i.fa.fa-map-marker, i.fa.fa-phone, i.fa.fa-envelope{
 	.faq_boxes{
 		padding: 50px 0px;
 	}
+	.slideshow-container .slides{
+		height: 60vh !important;
+	}
 }
 
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 	#nav_bar{
 		padding: 20px;
+	}
+	.slideshow-container .slides{
+		height: 50vh !important;
 	}
 }
 
